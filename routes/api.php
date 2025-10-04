@@ -13,4 +13,6 @@ Route::get('/test', function () {
         'timestamp' => now()
     ]);
 });
+
+//Este comentario es para probar el git stash y git stash pop
 ?>
