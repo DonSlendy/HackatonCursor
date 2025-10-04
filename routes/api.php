@@ -2,23 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\GeminiController;
 
 
-
-// Rutas de ejemplo para API
-Route::get('/test', function () {
-    return response()->json([
-        'message' => 'API funcionando correctamente',
-        'status' => 'success',
-        'timestamp' => now()
-    ]);
-});
-<<<<<<< Updated upstream
-
-//Este comentario es para probar el git stash y git stash pop
-?>
-=======
-?>
-
-//el rap de fernanflo es el mejor
->>>>>>> Stashed changes
+Route::post('/recibir-ingredientes', [GeminiController::class, 'recibirIngredientes']);
+Route::post('/crear-receta', [GeminiController::class, 'crearReceta']);
