@@ -20,6 +20,8 @@ Route::post('/crear-receta', [GeminiController::class, 'crearReceta']);
 
 // Rutas de Platillos
 Route::apiResource('platillos', PlatilloController::class);
+//Route::post('platillos', [PlatilloController::class, 'store']);
+Route::get('platillos', [PlatilloController::class, 'index']);
 
 // Rutas de Recetas
 Route::apiResource('recetas', RecetaController::class);
