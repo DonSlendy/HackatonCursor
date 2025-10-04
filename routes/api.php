@@ -13,6 +13,12 @@ Route::get('/test', function () {
         'timestamp' => now()
     ]);
 });
+<<<<<<< Updated upstream
 
 //Este comentario es para probar el git stash y git stash pop
 ?>
+=======
+?>
+
+//el rap de fernanflo es el mejor
+>>>>>>> Stashed changes
